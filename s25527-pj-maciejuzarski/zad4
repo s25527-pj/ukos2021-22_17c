@@ -1,0 +1,30 @@
+ZAD4
+1.
+- utworzyłem drzewo katalogow
+- mkdir -p ala/ma/kota ala/i/as kot/ma/ale
+- przechodze do katalogu kota: cd ala/ma/kota
+- relatywnie: cd ../../../kot/ma/ale 
+oraz absolutnie: cd /home/ubuntu/kot/ma/ale
+2.
+mkdir -p /home/ubuntu/kot/ma/ale/jan/kowalski/
+3.
+mv /home/ubuntu/kot/ma/ale /home/ubuntu/ala/i/
+4.
+spróbować ctrl+D; komendą kill
+5.
+ls -p | grep -e ^al | grep -v /
+6.
+chmod 751 /home/ubuntu/ala 
+albo
+chmod o=x, u=rwx, g=rx /home/ubuntu/ala
+7.
+ls -p | grep -v / > list_of_files
+8.
+sesja graficzna może nie mieć udostępnionej wystarczającej pamięci dla danego użytkownika, można się przełączyć na interfejs tekstowy (ctrl+alt+f1)
+9.
+klawisz TAB
+10. 
+np dodając flagę & po nazwie programu (firefox &)
+jeżeli program został uruchomiony bez tej flagi i działa jako główny w sesji, można go wstrzymać
+skrótem ctrl+Z, pobrać nr jego joba (komenda jobs) i użyć go do uruchomienia w tle komendą bg (bg nr_joba)
+

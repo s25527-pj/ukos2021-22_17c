@@ -1,0 +1,20 @@
+ZAD1.
+- Terminal uruchomiony
+- wyświetlam zawartość aktualnego katalogu programem ls
+- znajduję się w katalogu ~/ala/ma/kota
+- przechodzę do Pulpitu ścieżką względną - cd ../../../Desktop
+- wyświetlam zawartość bieżącego katalogu, wynik: adding-packages-permanently-info.txt  passwords-info.txt
+- to samo widzę w interfejsie graficznym
+- wyświetlam zawartość katalogu domowego: ls ~ (lub ls $HOME)
+- przechodzę do katalogu obrazy ścieżką względną: cd ../Pictures
+- wprowadzenie cd ././././././ nie skutkuje zmianą katalogu
+- przechodzę do katalogu domowego ścieżką bezwzględną: cd /home/ubuntu
+- cd /root skutkuje odmową dostępu
+- ctrl+alt+f1 skutkuje przejściem do pierwszej z sześciu konsol (6 tekstowych konsol na skrótach F1-F6, ctrl+alt+F7 kieruje na interfejs graciczny)
+- tworzę strukturę katalogów: mkdir -p ukos/katalog/katalog2 ukos/katalog/katalog3 ukos/klamka
+- tworzę pliki: touch ukos/klamka/zajecia2.txt ukos/klamka/zajecia2.log ukos/klamka/inny.txt ukos/klamka/nowy.txt
+- tworzę katalog: mkdir -p ukos/to/jest/dluga/nazwa/
+- umieszczam plik: touch ukos/to/jest/dluga/nazwa/dane.txt
+- usuwam pliki: rm ukos/to/jest/dluga/nazwa/*.txt
+- usuwam katalogi: rm -r ukos/katalog/katalog2/  oraz rm -r ukos/klamka
+

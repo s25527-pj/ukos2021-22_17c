@@ -1,0 +1,37 @@
+ZAD3
+1.
+- uzywając ps wyświetliłem bieżące procesy, uruchomione przeze mnie, były to:
+bash, gedit oraz właśnie użyty ps
+- uzywajac flagi -a ponownie wyswietlilem biezace procesy, tym razem nie uwzgledniajac lidera sesji, ktorym jest sam bash
+- uzywajac flagi x, wylistowalem wszystkie procesy, ktorych jestem wlascicielem
+- grupujac razem flagi aux wylistowalem komplet informacji na temat bieżących procesow 
+- ? w kolumnie TTY oznaczają, że proces nie jest przypisany do konkretnego terminala; szczególnie istotne dla procesów, które powinny pozostawać uruchomione niezależnie od otwartej sesji;
+1.1 ps a | grep bash
+1.2 ps -u root
+
+2.
+- uruchomiłem leafpad
+- listuje przy uzyciu ps:
+ PID TTY          TIME CMD
+  944 pts/0    00:00:00 bash
+ 1201 pts/0    00:00:05 gedit
+ 1313 pts/0    00:00:00 ps
+- kill 1201 zamyka gedita
+- killall shell rowniez 
+
+3. 
+ctrl+c wysyła sygnał zakończenia, przez co treść wpisana np w pliku tekstowym nie zostaje
+zapisana; dla odmiany ctr+d zamyka strumień wejścia, więc zapisana treść zostaje zapisana w plku
+
+4.
+-uruchomilem program Firefox
+-ctrl+z
+-proces firefoxa zostaje wstrzymany, przez co jego wyglad graficzny stwarza
+pozor 'zaciecia sie', nie reaguje na 'klikniecia'
+- po wylistowaniu komenda jobs, zwrocilem nr dzialajacego "joba" firefoxa
+- uzylem tego nr (w tym przypadku 1:
+ubuntu@bss-ubu1804:~$ jobs
+[1]+  Stopped                 firefox
+) do wznowienia działania programu w tle uzyłem komendy bg 1
+- zamknalem program firefox i uruchomilem go ponownie, tym razem od razu w tle dodajac &:
+firefox &
