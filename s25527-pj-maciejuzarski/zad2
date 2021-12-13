@@ -1,5 +1,8 @@
 ZAD2
-- opis umask: zestaw bitów odebranych od domyślnych bitów uprawnień przy tworzeniu nowych plików i katalogów; dla przykładu: umask ustawiony na 000 odbierze 000 bitów od pełnych bitów uprawnień 777 - oznacza to, że zarówno właściciel (u), grupa (g) oraz pozostali użytkownicy (o) będą mieli pełen dostęp do tworzonych danych (NIGDY TEGO NIE ROBIĆ! to tak jakby wyjechać na wakacje zostawiając wszystkie drzwi i okna na oścież otwarte); ustawienie umask na 777 będzie miało efekt odwrotny: 777 - 777 = 000, brak dostępu do tworzonych danych;
+- opis umask: zestaw bitów odebranych od domyślnych bitów uprawnień przy tworzeniu nowych plików i katalogów; dla przykładu: umask ustawiony na 000 odbierze 000 bitów od
+pełnych bitów uprawnień 777 - oznacza to, że zarówno właściciel (u), grupa (g) oraz pozostali użytkownicy (o) będą mieli pełen dostęp do tworzonych danych (NIGDY TEGO NIE
+ROBIĆ! to tak jakby wyjechać na wakacje zostawiając wszystkie drzwi i okna na oścież otwarte); ustawienie umask na 777 będzie miało efekt odwrotny: 777 - 777 = 000, brak
+dostępu do tworzonych danych;
 - wykonałem przykład:
 umask 033
 touch ukos/dostepy1.txt
