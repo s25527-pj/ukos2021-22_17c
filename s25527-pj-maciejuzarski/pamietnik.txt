@@ -31,3 +31,7 @@ na dzisiejszych zajeciach uczylem sie o strumieniach wejsciowym, wyjsciowym oraz
 
 
 drogi pamiętniczku na ostatnich zajęciach powtórzyłem wiedzę w ramach przygotowania do kolokwium
+
+
+Drogi pamietniczku,
+na kolejnych zajeciach poznalem powershella - potezne narzedzie do obslugi windowsa; nauczylem sie listowac pliki, moduly, pobierac duze pliki za pomoca BitsTransfera; powershell moze naprawde duzo i z pewnoscia poszerze w przyszlosci wiedze na jego temat
